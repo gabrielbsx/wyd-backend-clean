@@ -1,0 +1,50 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx --no-warnings --watch ./src/main/server.ts",
+    "build": "tsup ./src"
+  },
+  "_moduleAliases": {
+    "@": "./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/minio": "^7.0.15",
+    "@types/node": "^18.11.18",
+    "@types/ramda": "^0.28.22",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/middie": "^8.1.0",
+    "@fastify/multipart": "^7.4.0",
+    "@fastify/vite": "^3.0.7",
+    "@types/bcrypt": "^5.0.0",
+    "apollo-server": "^3.11.1",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0",
+    "graphql": "^15.8.0",
+    "inversify": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "minio": "^7.0.32",
+    "module-alias": "^2.2.2",
+    "mongodb-memory-server": "^8.11.4",
+    "mongoose": "^6.9.0",
+    "mongoose-autopopulate": "^0.17.1",
+    "qs": "^6.11.0",
+    "ramda": "^0.28.0",
+    "redis": "^4.6.3",
+    "reflect-metadata": "^0.1.13",
+    "slugify": "^1.6.5",
+    "zod": "^3.20.2"
+  }
+}
